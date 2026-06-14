@@ -1,0 +1,41 @@
+name: Generate Proxy Config
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - sources.json
+      - backend/**
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install httpx
+
+      - name: Run proxy generator
+        run: python -m backend.headless
+
+      - name: Deploy config to gh-pages branch
+        run: |
+          git config user.name "HolyVPN Bot"
+          git config user.email "bot@holyvpn.local"
+          git fetch origin gh-pages 2>/dev/null && git checkout gh-pages || git checkout --orphan gh-pages
+          git rm -rf . 2>/dev/null; true
+          git add HolyVPN.yaml
+          git commit -m "Auto-generate proxy config $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin gh-pages

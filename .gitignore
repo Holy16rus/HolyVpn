@@ -1,0 +1,12 @@
+node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.env
+HolyVPN.yaml
+deploy/
+*.bak
+web.bak/
+frontend/src/assets/hero.png
+frontend/src/assets/react.svg
+frontend/src/assets/vite.svg

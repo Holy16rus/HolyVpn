@@ -1,0 +1,71 @@
+{
+  "sources": [
+    {
+      "url": "https://github.com/TheSpeedX/PROXY-List",
+      "enabled": true
+    },
+    {
+      "url": "https://github.com/proxifly/free-proxy-list",
+      "enabled": true
+    },
+    {
+      "url": "https://github.com/VPN-Subcription-Links/ClashX-V2Ray-TopFreeProxy",
+      "enabled": true
+    },
+    {
+      "url": "https://github.com/oxylabs/free-proxy-list",
+      "enabled": true
+    },
+    {
+      "url": "https://free.redscrape.com/api/proxies?format=json",
+      "enabled": true
+    },
+    {
+      "url": "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+      "enabled": true
+    },
+    {
+      "url": "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all",
+      "enabled": true
+    },
+    {
+      "url": "https://gist.githubusercontent.com/oneclickvpnkeys/26630c1f32a8c0ac8e92f6646e15e95c/raw/FRAGMENT.txt",
+      "enabled": true
+    },
+    {
+      "url": "https://github.com/zloi-user/hideip.me",
+      "enabled": false
+    },
+    {
+      "url": "https://github.com/Surfboardv2ray/TGParse",
+      "enabled": false
+    },
+    {
+      "url": "https://github.com/sevcator/5ubscrpt10n",
+      "enabled": false
+    },
+    {
+      "url": "https://github.com/Surfboardv2ray/Proxy-sorter",
+      "enabled": false
+    },
+    {
+      "url": "https://github.com/ProxyScraper/ProxyScraper",
+      "enabled": false
+    },
+    {
+      "url": "https://github.com/Anonym0usWork1221/Free-Proxies",
+      "enabled": false
+    },
+    {
+      "url": "https://github.com/elliottophellia/proxylist",
+      "enabled": false
+    },
+    {
+      "url": "https://github.com/dpangestuw/Free-Proxy",
+      "enabled": false
+    }
+  ],
+  "local_files": [
+    "proxy.txt"
+  ]
+}
