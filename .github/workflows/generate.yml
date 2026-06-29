@@ -38,12 +38,12 @@ jobs:
 
       - name: Deploy config to gh-pages branch
         run: |
-          cp HolyVPN.yaml /tmp/HolyVPN.yaml
-          git config user.name "HolyVPN Bot"
-          git config user.email "bot@holyvpn.local"
+          cp NetherLink.yaml /tmp/NetherLink.yaml
+          git config user.name "NetherLink Bot"
+          git config user.email "bot@netherlink.local"
           git fetch origin gh-pages 2>/dev/null && git checkout gh-pages || git checkout --orphan gh-pages
           git rm -rf . 2>/dev/null; true
-          cp /tmp/HolyVPN.yaml HolyVPN.yaml
-          git add HolyVPN.yaml
+          cp /tmp/NetherLink.yaml NetherLink.yaml
+          git add NetherLink.yaml
           git commit -m "Auto-generate proxy config $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push origin gh-pages

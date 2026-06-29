@@ -13,7 +13,7 @@ from backend.config import OUTPUT_FILE, SOURCES_FILE, ROOT, load_sources, save_s
 from backend.engine import ProxyEngine
 from backend.pipeline import parse_live_file
 
-app = FastAPI(title="HolyVPN Proxy Generator")
+app = FastAPI(title="NetherLink")
 
 app.add_middleware(
     CORSMiddleware,

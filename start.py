@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HolyVPN Proxy Generator v2 — FastAPI + React"""
+"""NetherLink — FastAPI + React proxy generator"""
 import os
 import signal
 import uvicorn

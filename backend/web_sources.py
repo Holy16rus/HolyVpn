@@ -1,6 +1,5 @@
 """
-Сбор HTTP/HTTPS прокси с публичных JSON API (без тяжёлых зависимостей).
-Использует только httpx — уже есть в проекте.
+HTTP/HTTPS proxy collection from public JSON APIs.
 """
 import asyncio
 import httpx

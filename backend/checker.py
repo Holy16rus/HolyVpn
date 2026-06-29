@@ -8,7 +8,7 @@ HTTP_TEST_HOST = "www.gstatic.com"
 HTTP_TEST_REQUEST = (
     f"GET http://{HTTP_TEST_HOST}/generate_204 HTTP/1.1\r\n"
     f"Host: {HTTP_TEST_HOST}\r\n"
-    "User-Agent: HolyVPN-Proxy-Generator/2.0\r\n"
+    "User-Agent: NetherLink/2.0\r\n"
     "Proxy-Connection: close\r\n"
     "Connection: close\r\n\r\n"
 ).encode("ascii")
@@ -113,7 +113,7 @@ async def socks5_check(node, timeout):
         http_req = (
             f"GET /generate_204 HTTP/1.1\r\n"
             f"Host: {HTTP_TEST_HOST}\r\n"
-            "User-Agent: HolyVPN-Proxy-Generator/2.0\r\n"
+            "User-Agent: NetherLink/2.0\r\n"
             "Connection: close\r\n\r\n"
         ).encode("ascii")
         writer.write(http_req)

@@ -1,18 +1,18 @@
-# HolyVPN
+# NetherLink
 
 <p align="center">
   <a href="/README.md"><img src="https://img.shields.io/badge/🇷🇺%20Русский-README-orange" alt="RU"></a>
   <a href="https://t.me/githoly"><img src="https://img.shields.io/badge/📬%20Telegram-@githoly-0088cc" alt="Telegram"></a>
 </p>
 
-**HolyVPN** — a proxy subscription generator for Clash clients. It scrapes public proxies, checks their availability, detects country and latency, and produces a ready-to-use YAML configuration.
+**NetherLink** — a proxy subscription generator for Clash clients. It scrapes public proxies, checks their availability, detects country and latency, and produces a ready-to-use YAML configuration.
 
 ---
 
 ## Subscription URL
 
 ```
-https://raw.githubusercontent.com/Holy16rus/HolyVpn/gh-pages/HolyVPN.yaml
+https://raw.githubusercontent.com/Holy16rus/NetherLink/gh-pages/NetherLink.yaml
 ```
 
 Use this link in **FLClash**, **Clash Meta**, or any other Clash-compatible client as a subscription URL. The configuration is automatically regenerated every 6 hours.
@@ -35,8 +35,8 @@ Use this link in **FLClash**, **Clash Meta**, or any other Clash-compatible clie
 **Requirements:** Python 3.11+, Git
 
 ```bash
-git clone https://github.com/Holy16rus/HolyVpn.git
-cd HolyVpn
+git clone https://github.com/Holy16rus/NetherLink.git
+cd NetherLink
 pip install -r requirements.txt
 python start.py
 ```

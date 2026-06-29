@@ -1,18 +1,18 @@
-# HolyVPN
+# NetherLink
 
 <p align="center">
   <a href="/README.en.md"><img src="https://img.shields.io/badge/🇬🇧%20English-README-blue" alt="EN"></a>
   <a href="https://t.me/githoly"><img src="https://img.shields.io/badge/📬%20Telegram-@githoly-0088cc" alt="Telegram"></a>
 </p>
 
-**HolyVPN** — генератор прокси-подписок для Clash-клиентов. Собирает открытые прокси, проверяет их доступность, определяет страну и пинг, генерирует готовый YAML-конфиг.
+**NetherLink** — генератор прокси-подписок для Clash-клиентов. Собирает открытые прокси, проверяет их доступность, определяет страну и пинг, генерирует готовый YAML-конфиг.
 
 ---
 
 ## Подписка
 
 ```
-https://raw.githubusercontent.com/Holy16rus/HolyVpn/gh-pages/HolyVPN.yaml
+https://raw.githubusercontent.com/Holy16rus/NetherLink/gh-pages/NetherLink.yaml
 ```
 
 Используйте эту ссылку в **FLClash**, **Clash Meta** или любом другом Clash-совместимом клиенте как subscription URL. Конфигурация обновляется автоматически каждые 6 часов.
@@ -35,8 +35,8 @@ https://raw.githubusercontent.com/Holy16rus/HolyVpn/gh-pages/HolyVPN.yaml
 **Требования:** Python 3.11+, Git
 
 ```bash
-git clone https://github.com/Holy16rus/HolyVpn.git
-cd HolyVpn
+git clone https://github.com/Holy16rus/NetherLink.git
+cd NetherLink
 pip install -r requirements.txt
 python start.py
 ```

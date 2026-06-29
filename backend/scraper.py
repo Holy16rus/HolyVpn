@@ -21,7 +21,7 @@ def _get_github_client() -> httpx.AsyncClient:
             timeout=TIMEOUT,
             follow_redirects=True,
             limits=httpx.Limits(max_connections=50, max_keepalive_connections=20),
-            headers={"User-Agent": "HolyVPN-Proxy-Generator/2.0"},
+            headers={"User-Agent": "NetherLink/2.0"},
         )
     return _GITHUB_CLIENT
 
@@ -33,7 +33,7 @@ def _get_general_client() -> httpx.AsyncClient:
             timeout=TIMEOUT,
             follow_redirects=True,
             limits=httpx.Limits(max_connections=100, max_keepalive_connections=40),
-            headers={"User-Agent": "HolyVPN-Proxy-Generator/2.0"},
+            headers={"User-Agent": "NetherLink/2.0"},
         )
     return _GENERAL_CLIENT
 
